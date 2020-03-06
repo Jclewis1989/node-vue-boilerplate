@@ -26,7 +26,7 @@ app.use(ROUTE_CLIENT);
 app.use(ROUTE_ADMIN);
 app.use(ROUTE_VUE);
 
-// /client/src/assets/ is to render server side view folder correctly
+// /client/src/ is to render server side view folder correctly
 app.use(express.static(path.join(__dirname + '/client/src/')));
 
 // /server/html/ is to render vue app correctly
